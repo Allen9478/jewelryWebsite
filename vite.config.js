@@ -8,12 +8,12 @@ import AutoImport from "unplugin-auto-import/vite"
 import path from 'path'
 import Components from "unplugin-vue-components/vite"
 import Pages from 'vite-plugin-pages'
-import Layouts from 'vite-plugin-vue-layouts';
+import Layouts from 'vite-plugin-vue-layouts'
 
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'jewelryWebsite',
+  base:'/jewelryWebsite/',
   plugins: [
     vue(),
     Pages(),
