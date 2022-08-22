@@ -12,10 +12,11 @@
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <h2>testttttt</h2>
       </nav>
     </div>
   </header>
-  <h2>testtest</h2>
+  
   <RouterView />
 </template>
 
