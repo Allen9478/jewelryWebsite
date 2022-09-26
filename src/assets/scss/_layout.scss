@@ -1,0 +1,65 @@
+//先制定動畫規則
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+.router-link-active {
+  color: #ff9f29;
+}
+
+.logo {
+  font-size: 35px;
+  font-family: "Inspiration", cursive;
+  z-index: 1;
+  color: #ff9f29;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  &:hover {
+    cursor: pointer;
+    @include keyframes(jelly) {
+      0%,
+      100% {
+        transform: scale(1, 1);
+      }
+      25% {
+        transform: scale(0.9, 1.1);
+      }
+      50% {
+        transform: scale(1.1, 0.9);
+      }
+      75% {
+        transform: scale(0.95, 1.05);
+      }
+    }
+    @include animate(jelly, 1s, null, 1);
+  }
+}
+//header end
+
+//footer start
+.ft-wrapper {
+  color: white;
+  hr {
+    margin: 0 auto;
+    width: 80%;
+    border: 1px solid white;
+  }
+  .ft-Icon {
+    a {
+      svg {
+        opacity: 0.6;
+        &:hover {
+          transform: translateY(-5px);
+          transition: all 0.5s;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+//footer end
