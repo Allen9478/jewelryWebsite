@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/jewelryWebsite/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/jewelryWebsite/assets/index.32ce42e5.js"></script>
-    <link rel="stylesheet" href="/jewelryWebsite/assets/index.99513a07.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9dJREFUWEftl8+LHEUUx9+rqu7qnt6Z2d1JNkQQMQgSQrwm2VWDrIj/gEe9qngTiWCIjKyKnrwmlwQ8GHLx4FkEwR9nQ6J4EPVgQN3duEG3Z7enq3zVXTPdXdPdM3vWDxRT7/VW1av3vlXdC/950P5Ouf7r6NTOPny7M2LHrauRyINk77fUV7F1tOAtYzo4wTcvnfa+tK4MZn8zhlozVHB9EMCaxxCVbm4IiCdC7bMVng9WurEh16C7nP+dwGe0hsgH5FQCeOTng9fo56JJy0OddDY9JdZCBR6jBQQCX6lMMwM7RmvSZKMx9Py740+sO2M68uNf4keRwfvWhIDGrAa0QA2R0NCXxTPsMsCwPgjWp2ey2MreoX7hw7vxpjXzAEzqU403tIalzGs5TruUNsMTOM11MqK0WnsCH9BUrOpFj1zL1QnMyH9S8emkFFkAk9Sbfhkz3cmOomrntmGaehe3FDSGDfLUu5RLgSb1tMRtd/dl/ogZ7IwwS/3DXfpr6zf8cL+6w/T3FHSsstRPBVoDUi5WZfqsSf21tsUNphQhLV6XehdTClNzN/UuthS3cOvO4YNEYdf6GxGHCg62lbUKdu/t2V6BHCwB5+0BGJiHikmuXz4Ya1OX1haTEEaxhni/2lSSzjSaFvQhnf22lmiIlnCLXTotb/Y8uGqDaiSlAPxwXgFoV74ArD+9FToD9tVwQw4z2V4+67/a9eF29qQFsUAAwlwgc/D7bPvdp4OnTH96bnYfiPM09i9r1qKC0jFrgPt0+FvgAaZroXzcmkUAH61jHC2l5z0GVPF6EjrrrC0GKhODFvHRo+4ybL6+jrvWUwRgePNU8GNfqpewqYhUAdmx/Ro41b9ya5Uhd+8Yf+ft9bD5bWjIROmzRlGyhjvfwIPm9HcG+LURnTWn1M52+YxoFGXqtwQg6gWYiy580poVGmdL/xTnAj4ryjHpQFBzQXoRMTZbf1d0Lo0BDJ/BUU+oDcF0al05tLYf2X4JLmfTjxRPbwDPlUXn0pxP4o0z8vtlqV90RYmB7ZQQbv0p0C6J7sq58AvrqaU1AIMRZV/ANWtmjN2PBIKJagDhKn5TJzqXuQEY3jrrv1IWZUr19nxrEEgvHvpGtFYuuvcuhhvWbGWhAAyuKGVUDBVhsft5onNZOABXlLr0nScm1y9VJlrB59tE57JwAIayKBMKYHLpoTn/1Dc33fBC8HnuXYwjBWCYiFLR6pLejtyj+tMhWVR0LkUej8jWneS7ZGf8xP17+xCtRdsfbAZz/5Oq48gZmJCOxAX6QPlJdv2RVvIx6/6fIwLwL7YDWMit3ih+AAAAAElFTkSuQmCCr7J3UrNGf9P43Ir3KuN4j353FJQAL5QoGbi2cNrcs+U7GRv22I2lf9r8rKXJl/Zr+TDAfzNT1LJ8NGzpAAAAAElFTkSuQmCC" />
+  <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAADsAAAA7AF5KHG9AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAA9dJREFUWEftl8+LHEUUx9+rqu7qnt6Z2d1JNkQQMQgSQrwm2VWDrIj/gEe9qngTiWCIjKyKnrwmlwQ8GHLx4FkEwR9nQ6J4EPVgQN3duEG3Z7enq3zVXTPdXdPdM3vWDxRT7/VW1av3vlXdC/950P5Ouf7r6NTOPny7M2LHrauRyINk77fUV7F1tOAtYzo4wTcvnfa+tK4MZn8zhlozVHB9EMCaxxCVbm4IiCdC7bMVng9WurEh16C7nP+dwGe0hsgH5FQCeOTng9fo56JJy0OddDY9JdZCBR6jBQQCX6lMMwM7RmvSZKMx9Py740+sO2M68uNf4keRwfvWhIDGrAa0QA2R0NCXxTPsMsCwPgjWp2ey2MreoX7hw7vxpjXzAEzqU403tIalzGs5TruUNsMTOM11MqK0WnsCH9BUrOpFj1zL1QnMyH9S8emkFFkAk9Sbfhkz3cmOomrntmGaehe3FDSGDfLUu5RLgSb1tMRtd/dl/ogZ7IwwS/3DXfpr6zf8cL+6w/T3FHSsstRPBVoDUi5WZfqsSf21tsUNphQhLV6XehdTClNzN/UuthS3cOvO4YNEYdf6GxGHCg62lbUKdu/t2V6BHCwB5+0BGJiHikmuXz4Ya1OX1haTEEaxhni/2lSSzjSaFvQhnf22lmiIlnCLXTotb/Y8uGqDaiSlAPxwXgFoV74ArD+9FToD9tVwQw4z2V4+67/a9eF29qQFsUAAwlwgc/D7bPvdp4OnTH96bnYfiPM09i9r1qKC0jFrgPt0+FvgAaZroXzcmkUAH61jHC2l5z0GVPF6EjrrrC0GKhODFvHRo+4ybL6+jrvWUwRgePNU8GNfqpewqYhUAdmx/Ro41b9ya5Uhd+8Yf+ft9bD5bWjIROmzRlGyhjvfwIPm9HcG+LURnTWn1M52+YxoFGXqtwQg6gWYiy580poVGmdL/xTnAj4ryjHpQFBzQXoRMTZbf1d0Lo0BDJ/BUU+oDcF0al05tLYf2X4JLmfTjxRPbwDPlUXn0pxP4o0z8vtlqV90RYmB7ZQQbv0p0C6J7sq58AvrqaU1AIMRZV/ANWtmjN2PBIKJagDhKn5TJzqXuQEY3jrrv1IWZUr19nxrEEgvHvpGtFYuuvcuhhvWbGWhAAyuKGVUDBVhsft5onNZOABXlLr0nScm1y9VJlrB59tE57JwAIayKBMKYHLpoTn/1Dc33fBC8HnuXYwjBWCYiFLR6pLejtyj+tMhWVR0LkUej8jWneS7ZGf8xP17+xCtRdsfbAZz/5Oq48gZmJCOxAX6QPlJdv2RVvIx6/6fIwLwL7YDWMit3ih+AAAAAElFTkSuQmCCr7J3UrNGf9P43Ir3KuN4j353FJQAL5QoGbi2cNrcs+U7GRv22I2lf9r8rKXJl/Zr+TDAfzNT1LJ8NGzpAAAAAElFTkSuQmCC" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>珠寶網站</title>
+  <script type="module" crossorigin src="/jewelryWebsite/assets/index.afa87d68.js"></script>
+  <link rel="stylesheet" href="/jewelryWebsite/assets/index.eb3d03c4.css">
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  
+</body>
+
 </html>
