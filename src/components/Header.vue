@@ -8,7 +8,7 @@
       <li><a href="#">map</a></li>
       <li><a href="#">connect us</a></li>
     </ul> -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark px-lg-4">
       <div class="container-fluid d-flex justify-content-between">
         <RouterLink class="navbar-brand logo" to="/">An Jewelry</RouterLink>
         <button
@@ -23,10 +23,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse justify-content-end navbar-collapse"
+          class="collapse justify-content-end navbar-collapse bg-black"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
             <li class="nav-item">
               <RouterLink class="nav-link" to="/">首頁</RouterLink>
             </li>
@@ -43,7 +43,7 @@
               <RouterLink class="nav-link" to="shop">會員登入</RouterLink>
             </li>
           </ul>
-          <form class="d-flex ms-5">
+          <form class="d-flex ms-lg-5">
             <input
               class="form-control me-2"
               type="search"

@@ -1,24 +1,57 @@
+// .frontPage {
+//   height: 80vh;
+//   background: url("../img/layout.jpg") no-repeat top left 110%;
+//   background-size: contain;
+//   .test {
+//     transform: translateX(400px);
+//     transition: all 0.5s;
+//   }
+//   .frontPagebox {
+//     width: 45%;
+//     height: 200px;
+//     transition: all 0.5s;
+//     h2 {
+//       display: inline;
+//       top: 40%;
+//       left: 15%;
+//       color: white;
+//       font-size: 40px;
+//       i {
+//         color: white;
+//         font-size: 16px;
+//       }
+//     }
+//   }
+// }
 .frontPage {
+  position: relative;
+  width: 100%;
   height: 80vh;
   background: url("../img/layout.jpg") no-repeat top left 110%;
   background-size: contain;
-  .test {
-    transform: translateX(400px);
-    transition: all 0.5s;
-  }
-  .frontPagebox {
-    width: 45%;
-    height: 200px;
-    transition: all 0.5s;
-    h2 {
-      display: inline;
-      top: 40%;
-      left: 15%;
-      color: white;
-      font-size: 40px;
-      i {
-        color: white;
-        font-size: 16px;
+  color: white;
+  &_main {
+    &_content {
+      width: 45%;
+      margin-top: 120px;
+      h2 {
+        font-size: 40px;
+        i {
+          font-size: 16px;
+        }
+      }
+      @media (max-width: 1024px) {
+        width: 100%;
+        h2 {
+          font-size: 24px;
+          i {
+            font-size: 12px;
+          }
+        }
+        button {
+          width: 40%;
+          padding: 10px;
+        }
       }
     }
   }
@@ -27,14 +60,14 @@
   cursor: pointer;
   position: absolute;
   left: 50%;
-  bottom: 3%;
+  bottom: 0%;
   //加這個才能水平置中
   transform: translateX(-50%);
   width: 30px;
   height: 50px;
   border-radius: 20px;
   border: 2px solid white;
-  position: relative;
+  // position: relative;
   &:before {
     content: "";
     position: absolute;

@@ -2,10 +2,10 @@
 
 <template>
   <footer>
-    <div class="ft-wrapper p-3 container-fluid d-flex flex-column">
+    <div class="ft_wrapper p-3 container-fluid d-flex flex-column">
       <hr />
-      <div class="ft-Infor d-flex justify-content-around align-items-center">
-        <div class="ft-Icon p-3 d-flex align-items-center">
+      <div class="d-flex justify-content-between align-items-center p-4">
+        <div class="ft_Icon d-flex align-items-center">
           <a class="text-primary me-4" href="https://tw.linkedin.com/"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +37,8 @@
           <a class="text-danger" href="https://tw.linkedin.com/"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
+              width="35"
+              height="35"
               fill="currentColor"
               class="bi bi-youtube"
               viewBox="0 0 16 16"
@@ -49,7 +49,7 @@
             </svg>
           </a>
         </div>
-        <p class="">&copy 2022 個人作品集</p>
+        <p class="">&copy 個人作品集</p>
       </div>
     </div>
   </footer>

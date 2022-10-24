@@ -10,13 +10,12 @@
 .router-link-active {
   color: #ff9f29;
 }
-
 .logo {
   font-size: 35px;
   font-family: "Inspiration", cursive;
   z-index: 1;
   color: #ff9f29;
-  padding: 0.5em 1em;
+  padding: 0.5em 0em;
   outline: none;
   border: none;
   &:hover {
@@ -42,14 +41,17 @@
 //header end
 
 //footer start
-.ft-wrapper {
+.ft_wrapper {
   color: white;
-  hr {
-    margin: 0 auto;
-    width: 80%;
-    border: 1px solid white;
-  }
-  .ft-Icon {
+  // hr {
+  //   margin: 0 auto;
+  //   width: 90%;
+  //   border: 1px solid white;
+  //   @media (min-width: 1024px) {
+  //     width: 100%;
+  //   }
+  // }
+  .ft_Icon {
     a {
       svg {
         opacity: 0.6;
