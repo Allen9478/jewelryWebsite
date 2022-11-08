@@ -1,21 +1,71 @@
-//先制定動畫規則
-@mixin animate($animation, $duration, $method, $times) {
-  animation: $animation $duration $method $times;
-}
-@mixin keyframes($name) {
-  @keyframes #{$name} {
-    @content;
+.navbar-collapse {
+  @media (max-width: 992px) {
+    // min-height: 85vh;
   }
 }
-.router-link-active {
-  color: #ff9f29;
+.offcanvas {
+  .offcanvas-start {
+    z-index: 1050;
+  }
 }
+.header-cart {
+  width: 55px;
+  height: 32px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.header-hamburger {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  vertical-align: middle;
+  transition: all 0.3s;
+  span {
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 2px;
+    &:nth-child(1) {
+      top: 10%;
+    }
+    &:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:nth-child(3) {
+      bottom: 10%;
+    }
+  }
+}
+//漢堡選單點及效果
+.navbar-toggler[data-bs-toggle="collapse"][aria-expanded="true"] {
+  .header-hamburger {
+    span:nth-child(1) {
+      transform: rotateZ(45deg) translateY(-50%);
+      top: 49%;
+      transform-origin: 50% 0;
+    }
+    span:nth-child(2) {
+      display: none;
+    }
+    span:nth-child(3) {
+      transform: rotateZ(-45deg) translateY(-50%);
+      bottom: 42%;
+      transform-origin: 50% 0;
+    }
+  }
+}
+// .navbar-toggler[data-bs-toggle="collapse"][aria-expanded="true"] .navbar-toggler-animation span:nth-child(2)
 .logo {
   font-size: 35px;
   font-family: "Inspiration", cursive;
   z-index: 1;
-  color: #ff9f29;
-  padding: 0.5em 0em;
+  @include theme-color;
+  // padding: 0.5em 0em;
   outline: none;
   border: none;
   &:hover {
