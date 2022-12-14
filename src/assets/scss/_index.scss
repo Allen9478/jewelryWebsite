@@ -1,26 +1,27 @@
 .frontPage {
-  position: relative;
-  // width: 100%;
-  height: 80vh;
-  // background: url("../img/layout.jpg") no-repeat top left 110%;
-  // background-size: contain;
+  h2 {
+    font-size: 40px;
+    i {
+      font-size: 16px;
+    }
+  }
   color: white;
   &_main {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     background-size: contain;
     @media (max-width: 1024px) {
       flex-direction: column;
     }
     &_content {
-      width: 45%;
+      width: 50%;
       margin-top: 120px;
-      h2 {
-        font-size: 40px;
-        i {
-          font-size: 16px;
-        }
-      }
+      //測試隱藏後顯現效果st
+      transition: all 2s;
+      // opacity: 0;
+      // transform: translateY(-100px);
+      //測試隱藏後顯現效果end
+
       @media (max-width: 1024px) {
         width: 100%;
         margin-top: 0px;
@@ -38,11 +39,11 @@
     }
     &_img {
       width: 55%;
-      height: 600px;
+      height: 500px;
       overflow: hidden;
       img {
-        height: 100%;
         object-fit: contain;
+        height: 500px;
       }
       @media (max-width: 1024px) {
         width: 100%;
@@ -50,44 +51,43 @@
       }
     }
   }
-}
-.mouse {
-  z-index: 1010;
-  cursor: pointer;
-  position: absolute;
-  left: 50%;
-  bottom: 0%;
-  //加這個才能水平置中
-  transform: translateX(-50%);
-  width: 30px;
-  height: 50px;
-  border-radius: 20px;
-  border: 2px solid white;
-  // position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: white;
-    border-radius: 50%;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, 0);
-    @keyframes mouse {
-      0%,
-      50% {
-        transform: translate(-50%, 0);
-        top: 10%;
-        opacity: 1;
+  &_aboutus {
+    width: 100%;
+    height: 85vh;
+    &_img {
+      width: 55%;
+      // height: 500px;
+      overflow: hidden;
+      img {
+        object-fit: contain;
+        filter: grayscale(1);
       }
-      80%,
-      100% {
-        transform: translate(-50%, 0) scale(0.5);
-        top: 40%;
-        opacity: 0;
+      @media (max-width: 1024px) {
+        min-width: 100%;
+        margin-bottom: 20px;
       }
     }
-    @include animate(mouse, 2s, null, infinite);
+    &_content {
+      width: 45%;
+    }
+  }
+  &_shop {
+    width: 100%;
+    &_cardGroup {
+      .card {
+        filter: grayscale(1);
+        transform: translateY(10px);
+        transition: all 1s;
+        &:hover {
+          filter: grayscale(0);
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+
+  .UpUp {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

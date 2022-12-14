@@ -1,10 +1,59 @@
 //githubicon hover顏色
 .gb-hover {
   &:hover {
-    color:white;
+    color: white;
   }
 }
 //手機選單的背景色
-.bg-black{
-  background:#000;
+.bg-black {
+  background: #000;
+}
+//滑鼠滑動的示意
+.mouse {
+  z-index: 1010;
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  bottom: 5%;
+  //加這個才能水平置中
+  transform: translateX(-50%);
+  width: 30px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid white;
+  // position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+    @keyframes mouse {
+      0%,
+      50% {
+        transform: translate(-50%, 0);
+        top: 10%;
+        opacity: 1;
+      }
+      80%,
+      100% {
+        transform: translate(-50%, 0) scale(0.5);
+        top: 40%;
+        opacity: 0;
+      }
+    }
+    @include animate(mouse, 2s, null, infinite);
+  }
+}
+.video-animated {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
 }

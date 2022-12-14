@@ -2,9 +2,9 @@
 <template>
   <header class="container-fluid d-flex align-items-center">
     <nav
-      class="navbar fixed-top navbar-expand-lg navbar-dark bg-black d-none d-lg-block .d-xl-block"
+      class="navbar fixed-top navbar-expand-lg navbar-dark bg-black d-none d-lg-block d-xl-block p-3"
     >
-      <div class="container-fluid d-flex justify-content-between p-2">
+      <div class="container-fluid d-flex justify-content-between">
         <RouterLink class="navbar-brand logo" to="/">An Jewelry</RouterLink>
         <RouterLink class="d-lg-none header-cart" to="shop"
           ><svg
@@ -48,6 +48,29 @@
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="shop">商品</RouterLink>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Link
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <RouterLink class="nav-link" to="shop">購物車</RouterLink>

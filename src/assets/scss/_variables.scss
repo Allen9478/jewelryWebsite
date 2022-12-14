@@ -507,6 +507,8 @@ $border-radius-pill: 50rem !default;
 $box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
 $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
 $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175) !default;
+$box-shadow-mystyle: rgb(38, 57, 77) 0px 20px 30px -10px !default;
+//陰影樣式初版暫定
 $box-shadow-inset: inset 0 1px 2px rgba($black, 0.075) !default;
 // scss-docs-end box-shadow-variables
 
@@ -1271,6 +1273,7 @@ $card-border-width: $border-width !default;
 $card-border-color: var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius: $border-radius !default;
 $card-box-shadow: null !default;
+$card-box-shadowbase: $box-shadow-mystyle !default;
 $card-inner-border-radius: subtract(
   $card-border-radius,
   $card-border-width
@@ -1282,6 +1285,8 @@ $card-cap-color: null !default;
 $card-height: null !default;
 $card-color: null !default;
 $card-bg: $white !default;
+$card-bg-mystyle: $black !default;
+//自己新增的顏色
 $card-img-overlay-padding: $spacer !default;
 $card-group-margin: $grid-gutter-width * 0.5 !default;
 // scss-docs-end card-variables
