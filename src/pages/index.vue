@@ -69,31 +69,41 @@ window.addEventListener("scroll", scrollUp);
         id="frontPage_main_content"
         class="frontPage_main_content flex-column"
       >
-        <h2 class="mb-4">「選擇鑽石，是因為它們體積小，</h2>
-        <h2 class="align-self-center ms-5 mb-5">
+        <h2 class="mb-4 w-100 text-center text-lg-start">
+          「選擇鑽石，是因為它們體積小，
+        </h2>
+        <h2 class="align-self-center text-center ms-lg-5 mb-5">
           卻能展現最大價值」<i class="">--Gabrielle Bonheur Chanel</i>
         </h2>
-        <div class="d-grid gap-2 d-flex justify-content-md-end me-md-4">
+        <div
+          class="d-flex justify-content-center justify-content-md-end me-md-5"
+        >
           <button type="button" class="btn btn-gold">立即探索</button>
         </div>
       </div>
     </div>
-    <div class="frontPage_aboutus d-flex align-items-center p-3 mt-5">
+    <div
+      class="frontPage_aboutus d-flex flex-column flex-md-row justify-content-between align-items-center p-3 mt-5"
+    >
       <div class="frontPage_aboutus_img">
         <img src="../assets/img/index_aboutImg.jpg" alt="" />
       </div>
       <div class="frontPage_aboutus_content">
         <h2>探索珠寶的更多美好,發現</h2>
-        <h2 class="ms-5 mt-3">藝術的價值,認識更多的我們</h2>
-        <div class="d-flex justify-content-start mt-5">
+        <h2 class="ms-lg-5 mt-lg-3">藝術的價值,認識更多的我們</h2>
+        <div
+          class="d-flex justify-content-center justify-content-lg-start mt-5 me-lg-5"
+        >
           <button type="button" class="btn btn-gold">了解更多</button>
         </div>
       </div>
     </div>
     <div class="frontPage_shop d-flex flex-column justify-content-center">
       <h2 class="text-center mb-5">尋找專屬自己的珠寶</h2>
-      <div class="frontPage_shop_cardGroup d-flex justify-content-around">
-        <div class="card" style="width: 18rem">
+      <div
+        class="frontPage_shop_cardGroup d-flex flex-lg-row flex-column justify-content-lg-around align-items-center"
+      >
+        <div class="card mt-5 mt-lg-0" style="width: 18rem">
           <img
             src="../assets/img/index_aboutImg.jpg"
             class="card-img-top"
@@ -108,7 +118,7 @@ window.addEventListener("scroll", scrollUp);
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card mt-5 mt-lg-0" style="width: 18rem">
           <img
             src="../assets/img/index_aboutImg.jpg"
             class="card-img-top"
@@ -123,7 +133,7 @@ window.addEventListener("scroll", scrollUp);
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card mt-5 mt-lg-0" style="width: 18rem">
           <img src="../assets/img/1.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>

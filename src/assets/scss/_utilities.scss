@@ -57,3 +57,11 @@
   min-height: 100%;
   z-index: -10;
 }
+//文字顯現and隱藏
+.text-hide {
+  display: none;
+}
+.text-show {
+  opacity: 1;
+  transform: translateY(-60px);
+}

@@ -8,7 +8,7 @@
   color: white;
   &_main {
     width: 100%;
-    height: 85vh;
+    // height: 85vh;
     background-size: contain;
     @media (max-width: 1024px) {
       flex-direction: column;
@@ -38,7 +38,7 @@
       }
     }
     &_img {
-      width: 55%;
+      width: 50%;
       height: 500px;
       overflow: hidden;
       img {
@@ -53,22 +53,29 @@
   }
   &_aboutus {
     width: 100%;
-    height: 85vh;
     &_img {
       width: 55%;
-      // height: 500px;
       overflow: hidden;
+      opacity: 0;
+      transition: all 1s;
       img {
         object-fit: contain;
-        filter: grayscale(1);
       }
       @media (max-width: 1024px) {
-        min-width: 100%;
         margin-bottom: 20px;
+        width: 100%;
       }
     }
     &_content {
       width: 45%;
+      opacity: 0;
+      transition: all 1s;
+      @media (max-width: 1024px) {
+        width: 100%;
+        h2 {
+          font-size: 24px;
+        }
+      }
     }
   }
   &_shop {
@@ -84,10 +91,20 @@
         }
       }
     }
+    @media (max-width: 1024px) {
+      &_cardGroup {
+        .card {
+          filter: grayscale(0);
+        }
+      }
+      h2 {
+        font-size: 32px;
+      }
+    }
   }
 
   .UpUp {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(-30px);
   }
 }

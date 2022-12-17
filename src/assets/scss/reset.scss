@@ -111,7 +111,7 @@ html {
 body {
   line-height: 1;
   background: #000;
-  height: 100vh;
+  // height: 100vh;
 }
 ol,
 ul {
@@ -151,4 +151,5 @@ header {
 .router-link-active {
   @include theme-color;
 }
+
 //-----------------------------------reset end
