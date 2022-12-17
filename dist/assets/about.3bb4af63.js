@@ -1,1 +1,0 @@
-import{_ as t,o as e,c as n}from"./index.83f6e989.js";const o={},_={type:"button",class:"btn btn-primary"};function c(r,s){return e(),n("button",_,"Primary")}const u=t(o,[["render",c]]);export{u as default};
