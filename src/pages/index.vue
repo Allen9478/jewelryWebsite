@@ -146,11 +146,11 @@ window.addEventListener("scroll", scrollUp);
         </div>
       </div>
     </div>
-    <div class="video-animated">
-      <video autoplay muted loop>
-        <source src="../assets/video/animated-bg.mp4" />
-      </video>
-    </div>
   </div>
   <div class="mouse d-none d-lg-block"></div>
+  <div class="video-animated">
+    <video autoplay muted loop>
+      <source src="../assets/video/animated-bg.mp4" />
+    </video>
+  </div>
 </template>
