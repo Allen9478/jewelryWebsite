@@ -1,0 +1,1 @@
+import{f as t,o as e,c as o}from"./index.151a6d0e.js";const n={},c={type:"button",class:"btn btn-outline-danger"};function s(r,a){return e(),o("button",c,"shop")}const f=t(n,[["render",s]]);export{f as default};
